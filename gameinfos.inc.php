@@ -13,25 +13,25 @@
 $gameinfos = array( 
 
 // Name of the game in English (will serve as the basis for translation) 
-'game_name' => "My Great Game",
+'game_name' => "Dungeon Lords",
 
 // Game designer (or game designers, separated by commas)
-'designer' => 'John Doe',       
+'designer' => 'Vlaada Chvátil',       
 
 // Game artist (or game artists, separated by commas)
-'artist' => 'Jane Doe',         
+'artist' => 'David Cochard',         
 
 // Year of FIRST publication of this game. Can be negative.
-'year' => 2000,                 
+'year' => 2009,                 
 
 // Game publisher (use empty string if there is no publisher)
-'publisher' => 'My Publishing Company',                     
+'publisher' => 'Czech Games Edition',                     
 
 // Url of game publisher website
-'publisher_website' => 'http://www.mypublishingcompany.com/',   
+'publisher_website' => 'https://czechgames.com/en/dungeon-lords/',   
 
 // Board Game Geek ID of the publisher
-'publisher_bgg_id' => 1234,
+'publisher_bgg_id' => 7345,
 
 // Board game geek ID of the game
 'bgg_id' => 45315,
@@ -50,16 +50,16 @@ $gameinfos = array(
 
 
 // Estimated game duration, in minutes (used only for the launch, afterward the real duration is computed)
-'estimated_duration' => 30,           
+'estimated_duration' => 90,           
 
 // Time in second add to a player when "giveExtraTime" is called (speed profile = fast)
-'fast_additional_time' => 30,           
+'fast_additional_time' => 45,           
 
 // Time in second add to a player when "giveExtraTime" is called (speed profile = medium)
-'medium_additional_time' => 40,           
+'medium_additional_time' => 55,           
 
 // Time in second add to a player when "giveExtraTime" is called (speed profile = slow)
-'slow_additional_time' => 50,           
+'slow_additional_time' => 105,           
 
 // If you are using a tie breaker in your game (using "player_score_aux"), you must describe here
 // the formula used to compute "player_score_aux". This description will be used as a tooltip to explain
@@ -67,6 +67,10 @@ $gameinfos = array(
 // Note: if you are NOT using any tie breaker, leave the empty string.
 //
 // Example: 'tie_breaker_description' => totranslate( "Number of remaining cards in hand" ),
+
+// COMMENT: The player with the most points wins and becomes the Under-lord, the highest-ranking dungeon lord in the land. 
+// If there is a tie, then victory is shared. All players who finish the game with a score above zero pass the test and get their dungeon lord licenses. 
+// If you finish with zero points or less, don’t worry: you’ll get your license next time.
 'tie_breaker_description' => "",
 
 // If in the game, all losers are equal (no score to rank them or explicit in the rules that losers are not ranked between them), set this to true 
@@ -87,6 +91,7 @@ $gameinfos = array(
 // NB: the default will be the first language in this list spoken by the player, so you should list them by popularity/preference.
 'language_dependency' => false,
 
+// TODO: Finish the Complexity, luck, strategy, diplomacy ratings
 // Complexity of the game, from 0 (extremely simple) to 5 (extremely complex)
 'complexity' => 3,    
 
@@ -99,6 +104,7 @@ $gameinfos = array(
 // Diplomacy of the game, from 0 (no interaction in this game) to 5 (totally based on interaction and discussion between players)
 'diplomacy' => 3,    
 
+// TODO: Pick Colors for players
 // Colors attributed to players
 'player_colors' => array( "ff0000", "008000", "0000ff", "ffa500", "773300" ),
 
@@ -110,6 +116,7 @@ $gameinfos = array(
 // If you want to disable this, set this to true
 'disable_player_order_swap_on_rematch' => false,
 
+// TODO: See if this needs to be adjusted 
 // Game interface width range (pixels)
 // Note: game interface = space on the left side, without the column on the right
 'game_interface_width' => array(
@@ -127,6 +134,7 @@ $gameinfos = array(
     'max' => null
 ),
 
+// TODO: Add the Game Presentation Text
 // Game presentation
 // Short game presentation text that will appear on the game description page, structured as an array of paragraphs.
 // Each paragraph must be wrapped with totranslate() for translation and should not contain html (plain text without formatting).
