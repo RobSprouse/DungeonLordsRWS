@@ -42,31 +42,80 @@
            Consequently, don't hesitate to put as many comments as necessary.
 */
 
-
 /* Note: you must not use any @import directive */
-
 
 /********* You can start writing your CSS below this line: **********/
 
+/* COMMENT: Main play area */
 
-/*
-    Example of CSS sprites (a black token and a white token, 20x20px each, embedded in the same "tokens.png" 40x20px image):
+#mainPlayArea {
+     display: flex;
+     position: relative;
+     width: 100%;
+     margin: auto;
+}
 
-    .white_token {
-        background-image: url('img/tokens.png');
-        background-position: 0px 0px;
-    }
-    .black_token {
-        background-image: url('img/tokens.png');
-        background-position: -20px 0px;
-    }
-    .token {
-        width: 20px;
-        height: 20px;
-        background-repeat: none;
-    }
-*/
+#progressBoard {
+     display: flex;
+     width: 900px;
+     height: 313px;
+     margin: 2em;
+     background-image: url("img/progressBoard.jpg");
+     background-size: contain;
+}
 
+#centralBoard {
+     display: flex;
+     width: 900px;
+     height: 631px;
+     margin: 2em;
+     background-image: url("img/centralBoard.jpg");
+     background-size: 900px 631px;
+}
 
+#combatBoard {
+     display: flex;
+     width: 700px;
+     height: 151px;
+     margin: 2em;
+     background-image: url("img/combatBoard.jpg");
+     background-size: 700px 151px;
+}
 
+/* COMMENT: PLayer Boards */
+#bluePlayerBoard {
+     display: flex;
+     width: 700px;
+     height: 454px;
+     margin: 2em;
+     background-image: url("img/bluePlayerBoard.jpg");
+     background-size: 700px 454px;
+}
 
+#redPlayerBoard {
+     display: flex;
+     width: 700px;
+     height: 454px;
+     margin: 2em;
+     background-image: url("img/redPlayerBoard.jpg");
+     background-size: 700px 454px;
+}
+
+#greenPlayerBoard {
+     display: flex;
+     display: relative;
+     width: 700px;
+     height: 454px;
+     margin: 2em;
+     background-image: url("img/greenPlayerBoard.jpg");
+     background-size: 700px 454px;
+}
+
+#yellowPlayerBoard {
+     display: flex;
+     width: 700px;
+     height: 454px;
+     margin: 2em;
+     background-image: url("img/yellowPlayerBoard.jpg");
+     background-size: 700px 454px;
+}

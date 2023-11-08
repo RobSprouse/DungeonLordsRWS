@@ -24,21 +24,53 @@
     
     Please REMOVE this comment before publishing your game on BGA
 -->
+<!-- COMMENT: Main Play Area -->
+<div id="mainPlayArea">
 
+     <!-- COMMENT: Progress Board -->
+     <div id="progressBoard">
 
-This is your game interface. You can edit this HTML in your ".tpl" file.
+     </div>
 
+     <!-- COMMENT: Central Board -->
+     <div id="centralBoard">
+     </div>
 
-<script type="text/javascript">
+     <!-- COMMENT: Combat Board -->
+     <div id="combatBoard">
+     </div>
 
-// Javascript HTML templates
+     <!-- COMMENT: Player Boards -->
+     <div>
 
-/*
-// Example:
-var jstpl_some_game_item='<div class="my_game_item" id="my_game_item_${MY_ITEM_ID}"></div>';
+          <!-- COMMENT: Blue PLayer Board -->
+          <div id="bluePlayerBoard">
+          </div>
 
-*/
+          <!-- COMMENT: Red Player Board -->
+          <div id="redPlayerBoard">
+          </div>
 
-</script>  
+          <!-- COMMENT: Green Player Board -->
+          <div id="greenPlayerBoard">
+          </div>
+
+          <!-- COMMENT: Yellow Player Board -->
+          <div id="yellowPlayerBoard">
+          </div>
+
+     </div>
+
+</div>
+
+<!-- // Javascript HTML templates
+
+     /*
+     // Example:
+     var jstpl_some_game_item='<div class="my_game_item" id="my_game_item_${MY_ITEM_ID}"></div>';
+
+*/ -->
+
+</script>
 
 {OVERALL_GAME_FOOTER}
