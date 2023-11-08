@@ -26,7 +26,7 @@
 -->
 <!-- COMMENT: Main Play Area -->
 <div id="mainPlayArea">
-
+<p>Testfsdfs</p>
      <!-- COMMENT: Progress Board -->
      <div id="progressBoard">
 

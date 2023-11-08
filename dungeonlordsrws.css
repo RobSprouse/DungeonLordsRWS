@@ -49,10 +49,10 @@
 /* COMMENT: Main play area */
 
 #mainPlayArea {
-     display: flex;
      position: relative;
-     width: 100%;
-     margin: auto;
+     width: 950px;
+     height: 100%;
+     margin: 0.5em;
 }
 
 #progressBoard {
